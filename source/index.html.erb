@@ -234,8 +234,46 @@ a:hover {
 }
 <% end %>
       </section>
+
 <section class="readme-section">
-        <h2 class="readme-header">7. Have fun with HTML&CSS!</h2>
+        <h2 class="readme-header">7. Bootstrap Setup</h2>
+        <p>Link Bootstrap stylesheet in the head section of your HTML before your stylesheet link.</p>
+<% code("html") do %>
+<head>
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap.min.css">
+  <link href='style.css' rel='stylesheet'>
+</head>
+<% end %>
+        <p>Play with class="btn btn-primary" and class="list-inline", your first Bootstrap classes.</p>
+</section>
+
+<section class="readme-section">
+        <h2 class="readme-header">8. Bootstrap Grid</h2>
+        <p>Inject your 4 cards div in the following responsive grid.</p>
+<% code("html") do %>
+<div class="container">
+  <div class="row">
+    <div class="col-xs-12 col-sm-6 col-md-3">
+      <!-- div class="card" -->
+    </div>
+    <div class="col-xs-12 col-sm-6 col-md-3">
+      <!-- div class="card" -->
+    </div>
+    <div class="col-xs-12 col-sm-6 col-md-3">
+      <!-- div class="card" -->
+    </div>
+    <div class="col-xs-12 col-sm-6 col-md-3">
+      <!-- div class="card" -->
+    </div>
+  </div>
+</div>
+<% end %>
+</section>
+
+<section class="readme-section">
+        <h2 class="readme-header">9. Have fun with HTML&CSS!</h2>
         <ul>
           <li>We recommend you continue back home and <a href="https://www.codecademy.com/learn/learn-html-css">complete this free 101 course</a></li>
           <li>Tell us what you think! <a href="https://lewagonshanghai.typeform.com/to/pCKgzg">Fill in this feedback form</a> (2minutes only)</li>
